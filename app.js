@@ -35,5 +35,8 @@ mongoose
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to Zhu Zhu Heaven." });
 });
+require("./routes/user.routes")(app);
+require("./routes/info.routes")(app);
+require("./routes/menu.routes")(app);
 
 module.exports = app;
