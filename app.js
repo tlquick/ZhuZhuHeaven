@@ -3,7 +3,7 @@ if (process.env.NODE_ENV != "production") {
 }
 const express = require("express");
 const cors = require("cors");
-
+const cookieSession = require("cookie-session");
 const app = express();
 
 var corsOptions = {
@@ -16,6 +16,14 @@ app.use(express.json());
 // content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
+app.use(
+  cookieSession({
+    name: "app-session",
+    // keys: ['key1', 'key2'],
+    secret: `${process.env.COOKIE_SECRET}`,
+    httpOnly: true,
+  })
+);
 const db = require("./models");
 const mongoose = db.mongoose;
 mongoose.set("strictQuery", true);
@@ -26,7 +34,6 @@ mongoose
   })
   .then(() => {
     console.log("Successfully connect to MongoDB.");
-    //initial();
   })
   .catch((err) => {
     console.error("Connection error", err);

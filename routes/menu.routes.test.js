@@ -25,6 +25,7 @@ describe("POST /menu/search", () => {
 /* Connecting to the database before each test. */
 beforeEach(async () => {
   await mongoose.connect(process.env.DATABASE_URL);
+  jest.setTimeout(50000);
 });
 
 /* Closing database connection after each test. */
