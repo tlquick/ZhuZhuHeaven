@@ -8,6 +8,7 @@ const app = express();
 
 var corsOptions = {
   origin: `${process.env.CLIENT_URL}`,
+  credentials: true,
 };
 
 app.use(cors(corsOptions));
@@ -21,9 +22,12 @@ app.use(
     name: "app-session",
     // keys: ['key1', 'key2'],
     secret: `${process.env.COOKIE_SECRET}`,
-    httpOnly: true,
+    sameSite: process.env.NODE_ENV === "production" ? "none" : false,
+    secure: process.env.NODE_ENV === "production" ? true : false,
+    httpOnly: process.env.NODE_ENV === "production" ? true : false,
   })
 );
+app.enable("trust proxy");
 const db = require("./models");
 const mongoose = db.mongoose;
 mongoose.set("strictQuery", true);
