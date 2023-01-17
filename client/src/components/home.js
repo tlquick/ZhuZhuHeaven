@@ -1,9 +1,18 @@
+import NavBar from "./navbar";
+import Main from "./main";
+import Footer from "./footer";
 const Home = () => {
   return (
     <div>
-      <h2> Zhu Zhu Heaven</h2>
-      <a href="/user/signin">Sign In</a>
-      <a href="/user/signup">Sign Up</a>
+      <div>
+        <NavBar />
+      </div>
+      <div>
+        <Main />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -126,7 +126,7 @@ const Signup = () => {
             </div>
 
             <div className="form-group">
-              <button className="btn btn-primary btn-lg btn-block">
+              <button className="sign-button btn btn-primary btn-lg btn-block">
                 Sign Up
               </button>
             </div>
