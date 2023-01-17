@@ -1,4 +1,8 @@
 /node_modules
+/client/node_modules
 .env
+/client/.env
 /build
+/client/build
 /coverage
+/client/coverage
