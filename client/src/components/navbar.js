@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-
 import AuthService from "../services/user.service";
 const NavBar = () => {
   const navigate = useNavigate();
@@ -22,7 +21,7 @@ const NavBar = () => {
         <a className="link " href="/user/signup">
           Sign Up
         </a>
-        <button className="link " onclick={handleSignout}>
+        <button className="link " onClick={handleSignout}>
           Sign Out
         </button>
         <a className="link " href="/user/cart">
