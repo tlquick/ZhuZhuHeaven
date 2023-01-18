@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches signin snapshot 1`] = `
+<div>
+  <div
+    className="card card-container"
+    data-testid="signin-1"
+  >
+    <img
+      alt="profile-img"
+      className="profile-img-card"
+      src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+    />
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="username"
+        >
+          Username
+        </label>
+        <input
+          className="form-control"
+          name="username"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="password"
+        >
+          Password
+        </label>
+        <input
+          className="form-control"
+          name="password"
+          onChange={[Function]}
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <button
+          className="sign-button btn btn-primary btn-lg btn-block"
+        >
+          <span>
+            Sign in
+          </span>
+        </button>
+      </div>
+      <button
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="link"
+      >
+        Not registered? 
+        <a
+          href="/user/signup"
+        >
+          Sign Up
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+`;

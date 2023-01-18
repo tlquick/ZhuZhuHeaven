@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches navbar snapshot 1`] = `
+<div
+  className="header"
+  data-testid="navbar-1"
+>
+  <a
+    href="/"
+  >
+    <img
+      alt="logo"
+      src="/images/logo.png"
+    />
+  </a>
+  <div
+    className="nav"
+  >
+    <a
+      className="link "
+      href="/user/signin"
+    >
+      Sign In
+    </a>
+    <a
+      className="link "
+      href="/user/signup"
+    >
+      Sign Up
+    </a>
+    <button
+      className="link "
+      onClick={[Function]}
+    >
+      Sign Out
+    </button>
+    <a
+      className="link "
+      href="/user/cart"
+    >
+      Cart
+    </a>
+  </div>
+  <div
+    className="search-wrapper"
+  >
+    <input
+      id="search"
+      placeholder="Search"
+      type="search"
+    />
+    <button>
+      Go
+    </button>
+  </div>
+</div>
+`;

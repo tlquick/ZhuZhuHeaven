@@ -1,6 +1,6 @@
 const Agreement = () => {
   return (
-    <div className="main-screen">
+    <div className="main-screen" data-testid="agreement-1">
       <h2>Customer Agreement</h2>
       <p>
         Lorem ipsum dolor sit amet. 33 quia voluptate sit veritatis corrupti est

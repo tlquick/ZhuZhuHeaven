@@ -1,6 +1,7 @@
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" data-testid="footer-1">
+      <p>Address: 1 ZhuZhu Street, ZhuzhuCity 1234. Z.H.U Zhuzhuland</p>
       <a className="link " href="/info/privacy">
         Privacy Policy
       </a>
@@ -13,7 +14,6 @@ const Footer = () => {
       <a className="link " href="/info/sitemap">
         Sitemap
       </a>
-      <p>Address: 1 ZhuZhu Street, ZhuzhuCity 1234. Z.H.U Zhuzhuland</p>
     </div>
   );
 };

@@ -55,7 +55,7 @@ const Signin = () => {
 
   return (
     <div>
-      <div className="card card-container">
+      <div className="card card-container" data-testid="signin-1">
         <img
           src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
           alt="profile-img"

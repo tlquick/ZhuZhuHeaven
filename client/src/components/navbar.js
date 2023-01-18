@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="header">
+    <div className="header" data-testid="navbar-1">
       <a href="/">
         <img src="/images/logo.png" alt="logo" />
       </a>

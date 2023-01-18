@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches signup snapshot 1`] = `
+<div>
+  <div
+    className="card card-container"
+    data-testid="signup-1"
+  >
+    <img
+      alt="profile-img"
+      className="profile-img-card"
+      src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+    />
+    <form
+      onSubmit={[Function]}
+    >
+      <div>
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="username"
+          >
+            Username
+          </label>
+          <input
+            className="form-control"
+            name="username"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="email"
+          >
+            Email
+          </label>
+          <input
+            className="form-control"
+            name="email"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="password"
+          >
+            Password
+          </label>
+          <input
+            className="form-control"
+            name="password"
+            onChange={[Function]}
+            type="password"
+            value=""
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <button
+            className="sign-button btn btn-primary btn-lg btn-block"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+      <button
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="link"
+      >
+        Already registered? 
+        <a
+          href="/user/signin"
+        >
+          Sign In
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+`;

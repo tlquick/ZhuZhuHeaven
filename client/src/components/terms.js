@@ -1,6 +1,6 @@
 const Terms = () => {
   return (
-    <div className="main-screen">
+    <div className="main-screen" data-testid="terms-1">
       <h2> Terms and Conditions</h2>
       <p>
         Lorem ipsum dolor sit amet. 33 quia voluptate sit veritatis corrupti est

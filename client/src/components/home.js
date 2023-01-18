@@ -1,7 +1,10 @@
 const Home = () => {
   return (
     <div>
-      <div className="main-screen">Main - changes on click</div>;
+      <div className="main-screen" data-testid="home-1">
+        Main - changes on click
+      </div>
+      ;
     </div>
   );
 };

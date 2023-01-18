@@ -1,6 +1,6 @@
 const Privacy = () => {
   return (
-    <div className="main-screen">
+    <div className="main-screen" data-testid="privacy-1">
       <h2> Privacy Policy</h2>
       <p>
         Lorem ipsum dolor sit amet. 33 quia voluptate sit veritatis corrupti est

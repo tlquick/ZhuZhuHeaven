@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches home snapshot 1`] = `
+<div>
+  <div
+    className="main-screen"
+    data-testid="home-1"
+  >
+    Main - changes on click
+  </div>
+  ;
+</div>
+`;
