@@ -13,7 +13,9 @@ const NavBar = () => {
 
   return (
     <div className="header">
-      <h2> Zhu Zhu Heaven</h2>
+      <a href="/">
+        <img src="/images/logo.png" alt="logo" />
+      </a>
       <div className="nav">
         <a className="link " href="/user/signin">
           Sign In

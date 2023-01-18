@@ -11,7 +11,7 @@
   border: 1rem;
   padding: 3rem;
 }
-img {
+.profile-img-card{
   width: 12rem;
   height:auto;
   border-radius: 50%;
@@ -23,6 +23,13 @@ img {
 {
   text-align: left;
   padding: 1rem;
+}
+.main-screen {
+  max-width: 84rem;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 label {
   font-size: 1rem;
@@ -46,6 +53,8 @@ label {
   position: sticky;
   top: 0px;
   height: 10hv;
+  text-align: left;
+  background-color: #f6f6f6;
 }
 .search-wrapper{
   text-align: center;
