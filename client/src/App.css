@@ -42,6 +42,7 @@ label {
 .sign-button {
   width: 100%;
 }
+
 .link {
   text-align: center;
   margin: 1rem;
@@ -68,4 +69,9 @@ label {
   padding: 1rem;
   background-color: #f6f6f6;
   height: 10vh;
+}
+.card-img-top{
+  width:15rem;
+  height:22rem;
+  object-fit:contain;
 }

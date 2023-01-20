@@ -32,7 +32,7 @@ const NavBar = () => {
       </div>
       <div className="search-wrapper">
         <input type="search" id="search" placeholder="Search" />
-        <button>Go</button>
+        <button className="search-button">Go</button>
       </div>
     </div>
   );
