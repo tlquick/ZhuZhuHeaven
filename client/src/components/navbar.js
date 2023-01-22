@@ -17,22 +17,41 @@ const NavBar = () => {
         <img src="/images/logo.png" alt="logo" />
       </a>
       <div className="nav">
-        <a className="link " href="/user/signin">
-          Sign In
+        <div>
+          <p className="contact mx-auto fs-2">Contact Us: 1800 zhu zhu</p>
+          <p className="contact mx-auto fs-5">****Free Delivery in Australia</p>
+        </div>
+        <a
+          className="link btn wiki fs-5"
+          href="https://en.wikipedia.org/wiki/ZhuZhu_Pets"
+        >
+          Learn More
         </a>
-        <a className="link " href="/user/signup">
-          Sign Up
+        <a className="link btn" href="/user/signin">
+          <img src="/images/signin.png" alt="signin" />
         </a>
-        <button className="link " onClick={handleSignout}>
-          Sign Out
+        <a className="link btn" href="/user/signup">
+          <img src="/images/signup.png" alt="signup" />
+        </a>
+        <button className="link btn" onClick={handleSignout}>
+          <img src="/images/signout.png" alt="signout" />
         </button>
-        <a className="link " href="/user/cart">
-          Cart
+        <a className="link btn" href="/user/cart">
+          <img src="/images/cart.png" alt="cart" />
         </a>
       </div>
-      <div className="search-wrapper">
-        <input type="search" id="search" placeholder="Search" />
-        <button className="search-button">Go</button>
+      <img src="/images/zhuzhu.png" className="pet-logo" alt="pet logo" />
+      <div className="search-wrapper input-group mb-2">
+        <input
+          className="form-control"
+          type="search"
+          placeholder="Type the name of the zhu zhu e.g. Dezel"
+        />
+        <div class="input-group-append">
+          <button class="search-button btn btn-outline-info" type="button">
+            <img src="/images/search.png" alt="search" />
+          </button>
+        </div>
       </div>
     </div>
   );

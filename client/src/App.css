@@ -16,8 +16,6 @@
   height:auto;
   border-radius: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 .form-group
 {
@@ -28,8 +26,9 @@
   max-width: 84rem;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+img {
+  vertical-align: middle;
 }
 label {
   font-size: 1rem;
@@ -42,7 +41,6 @@ label {
 .sign-button {
   width: 100%;
 }
-
 .link {
   text-align: center;
   margin: 1rem;
@@ -51,15 +49,18 @@ label {
   float: right;
 }
 .header {
-  position: sticky;
-  top: 0px;
+
+  position: relative;
+  top: 0rem;
   height: 10hv;
   text-align: left;
   background-color: #f6f6f6;
 }
 .search-wrapper{
   text-align: center;
-  margin: 1rem;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-screen{
   height: 80vh;
@@ -74,4 +75,17 @@ label {
   width:15rem;
   height:22rem;
   object-fit:contain;
+}
+.pet-logo{
+  position: absolute;
+  right: 5rem;
+  bottom: 1rem;
+}
+.contact{
+  display: block;
+  width: 30rem;
+  color:blueviolet;
+}
+.wiki{
+  color:#4B0082;
 }

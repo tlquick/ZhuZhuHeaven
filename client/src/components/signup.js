@@ -87,7 +87,7 @@ const Signup = () => {
         <img
           src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
           alt="profile-img"
-          className="profile-img-card"
+          className="profile-img-card mx-auto"
         />
 
         <form onSubmit={handleRegister}>
