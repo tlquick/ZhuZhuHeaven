@@ -7,7 +7,6 @@ const NavBar = () => {
   const [searchString, setSearchString] = useState("");
   const handleSignout = (e) => {
     e.preventDefault();
-
     AuthService.logout().then(() => {
       navigate("/");
       window.location.reload();

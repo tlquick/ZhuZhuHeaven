@@ -1,8 +1,25 @@
-import React, { useState } from "react";
-import Categories from "./categories";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import ItemCards from "./_itemcards";
+
 const Category = () => {
-  console.log("Categories are: " + Categories);
-  const [data, setData] = useState(Categories);
+  const [Categories, setCategories] = useState([]);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const url = `${process.env.REACT_APP_SERVER_URL}/category`;
+    (async () => {
+      try {
+        const response = await axios.get(url);
+        console.log("UseEffect: " + response.data);
+        setCategories(response.data);
+        setData(response.data);
+      } catch (error) {
+        alert(error.message);
+      }
+    })();
+  }, []); //run once
+
   const filterItems = (series) => {
     const result = Categories.filter((val) => {
       return val.series === series;
@@ -90,26 +107,7 @@ const Category = () => {
             </button>
           </div>
           <div className="col-md-9">
-            <div className="row">
-              {data.map((values) => {
-                const { id, name, desc, price, image } = values;
-                return (
-                  <div className="col-md-4 mb-4" key={id}>
-                    <div className="card">
-                      <img src={image} className="card-img-top" alt="item" />
-                      <div className="card-body">
-                        <h5 className="card-title">{name}</h5>
-                        <p className="card-text">{desc}</p>
-                        <p>Price: ${price}</p>
-                        <a href="/cart" className="btn btn-dark">
-                          Add to Cart
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+            <ItemCards items={data} />
           </div>
         </div>
       </div>
