@@ -1,7 +1,9 @@
 {
   "name": "ecommerce",
   "jest": {
-    "testPathIgnorePatterns": ["client"]
+    "testPathIgnorePatterns": [
+      "client"
+    ]
   },
   "version": "1.0.0",
   "description": "",
@@ -17,6 +19,7 @@
   "author": "Tracy Quick",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.2.3",
     "bcryptjs": "^2.4.3",
     "cookie-session": "^2.0.0",
     "cors": "^2.8.5",

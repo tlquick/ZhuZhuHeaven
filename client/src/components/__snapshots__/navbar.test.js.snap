@@ -16,42 +16,89 @@ exports[`matches navbar snapshot 1`] = `
   <div
     className="nav"
   >
+    <div>
+      <p
+        className="contact mx-auto fs-2"
+      >
+        Contact Us: 1800 zhu zhu
+      </p>
+      <p
+        className="contact mx-auto fs-5"
+      >
+        ****Free Delivery in Australia
+      </p>
+    </div>
     <a
-      className="link "
+      className="link btn wiki fs-5"
+      href="https://en.wikipedia.org/wiki/ZhuZhu_Pets"
+    >
+      Learn More
+    </a>
+    <a
+      className="link btn"
       href="/user/signin"
     >
-      Sign In
+      <img
+        alt="signin"
+        src="/images/signin.png"
+      />
     </a>
     <a
-      className="link "
+      className="link btn"
       href="/user/signup"
     >
-      Sign Up
+      <img
+        alt="signup"
+        src="/images/signup.png"
+      />
     </a>
     <button
-      className="link "
+      className="link btn"
       onClick={[Function]}
     >
-      Sign Out
+      <img
+        alt="signout"
+        src="/images/signout.png"
+      />
     </button>
     <a
-      className="link "
-      href="/user/cart"
+      className="link btn"
+      href="/cart"
     >
-      Cart
+      <img
+        alt="cart"
+        src="/images/cart.png"
+      />
     </a>
   </div>
+  <img
+    alt="pet logo"
+    className="pet-logo"
+    src="/images/zhuzhu.png"
+  />
   <div
-    className="search-wrapper"
+    className="search-wrapper input-group mb-2"
   >
     <input
-      id="search"
-      placeholder="Search"
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Type the name of the zhu zhu e.g. Dezel"
       type="search"
     />
-    <button>
-      Go
-    </button>
+    <div
+      className="input-group-append"
+    >
+      <button
+        className="search-button btn btn-outline-info"
+        onClick={[Function]}
+        type="button"
+      >
+        <img
+          alt="search"
+          src="/images/search.png"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;

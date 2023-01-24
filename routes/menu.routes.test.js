@@ -2,24 +2,14 @@ const app = require("../app.js");
 const request = require("supertest");
 const mongoose = require("mongoose");
 
-describe("GET /menu", () => {
+describe("Get /search", () => {
   it("returns status 200", (done) => {
-    request(app).get("/menu").expect(200, done);
+    request(app).get("/search").expect(200, done);
   });
 });
-describe("GET /menu/categories", () => {
+describe("POST /category", () => {
   it("returns status 200", (done) => {
-    request(app).get("/menu/categories").expect(200, done);
-  });
-});
-describe("GET /menu/categories/:id", () => {
-  it("returns status 200", (done) => {
-    request(app).get("/menu/categories/:id").expect(200, done);
-  });
-});
-describe("POST /menu/search", () => {
-  it("returns status 200", (done) => {
-    request(app).post("/menu/search").expect(200, done);
+    request(app).get("/category").expect(200, done);
   });
 });
 /* Connecting to the database before each test. */

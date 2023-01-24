@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthService from "../services/user.service";
+import axios from "axios";
 const NavBar = () => {
   const navigate = useNavigate();
+  const [searchString, setSearchString] = useState("");
   const handleSignout = (e) => {
     e.preventDefault();
 
@@ -9,6 +12,20 @@ const NavBar = () => {
       navigate("/");
       window.location.reload();
     });
+  };
+  const handleChange = (e) => {
+    e.preventDefault();
+    setSearchString(e.target.value.toLowerCase());
+  };
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    const params = new URLSearchParams();
+    params.append("s", searchString);
+
+    const url = `${process.env.REACT_APP_SERVER_URL}/search`;
+    const response = await axios.get(url, { params }); //send the searchString to the api as params
+    navigate("/search", { state: JSON.stringify(response.data) });
+    window.location.reload();
   };
 
   return (
@@ -36,7 +53,7 @@ const NavBar = () => {
         <button className="link btn" onClick={handleSignout}>
           <img src="/images/signout.png" alt="signout" />
         </button>
-        <a className="link btn" href="/user/cart">
+        <a className="link btn" href="/cart">
           <img src="/images/cart.png" alt="cart" />
         </a>
       </div>
@@ -46,9 +63,14 @@ const NavBar = () => {
           className="form-control"
           type="search"
           placeholder="Type the name of the zhu zhu e.g. Dezel"
+          onChange={handleChange}
         />
-        <div class="input-group-append">
-          <button class="search-button btn btn-outline-info" type="button">
+        <div className="input-group-append">
+          <button
+            className="search-button btn btn-outline-info"
+            type="button"
+            onClick={handleSearch}
+          >
             <img src="/images/search.png" alt="search" />
           </button>
         </div>

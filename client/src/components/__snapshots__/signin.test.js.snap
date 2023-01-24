@@ -8,7 +8,7 @@ exports[`matches signin snapshot 1`] = `
   >
     <img
       alt="profile-img"
-      className="profile-img-card"
+      className="profile-img-card mx-auto"
       src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
     />
     <form

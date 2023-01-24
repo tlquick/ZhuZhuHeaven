@@ -8,6 +8,7 @@ import {
   Signin,
   Signup,
   Cart,
+  Search,
   Privacy,
   Terms,
   Agreement,
@@ -25,7 +26,8 @@ function App() {
         <Route path="/" element=<Home />></Route>
         <Route path="user/signup" element=<Signup />></Route>
         <Route path="user/signin" element=<Signin />></Route>
-        <Route path="user/cart" element=<Cart />></Route>
+        <Route path="cart" element=<Cart />></Route>
+        <Route path="search" element=<Search />></Route>
         <Route path="info/privacy" element=<Privacy />></Route>
         <Route path="info/terms" element=<Terms />></Route>
         <Route path="info/agreement" element=<Agreement />></Route>

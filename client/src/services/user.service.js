@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const register = (username, email, password) => {
-  console.log("register called");
   console.log(`${process.env.REACT_APP_SERVER_URL}/user/signup`);
   return axios.post(`${process.env.REACT_APP_SERVER_URL}/user/signup`, {
     username,
@@ -12,7 +11,6 @@ const register = (username, email, password) => {
 };
 
 const login = (username, password) => {
-  console.log("login called");
   return axios
     .post(`${process.env.REACT_APP_SERVER_URL}/user/signin`, {
       username,
@@ -28,7 +26,6 @@ const login = (username, password) => {
 };
 
 const logout = () => {
-  console.log("logout called");
   localStorage.removeItem("user");
   return axios
     .post(`${process.env.REACT_APP_SERVER_URL}/user/signout`)

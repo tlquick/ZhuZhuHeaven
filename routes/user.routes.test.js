@@ -57,18 +57,18 @@ describe("POST /user/signin", () => {
       .expect(200, done);
   });
 });
-describe("GET /user/cart", () => {
+describe("GET /cart", () => {
   it("returns status 200", (done) => {
     request(app).post("/user/signin").send({
       username: "Test",
       password: "test123",
     });
-    request(app).get("/user/cart").expect(200, done);
+    request(app).get("/cart").expect(200, done);
   });
 });
-describe("POST /user/cart/add", () => {
+describe("POST /cart/add", () => {
   it("returns status 200", (done) => {
-    request(app).post("/user/cart/add").expect(200, done);
+    request(app).post("/cart/add").expect(200, done);
   });
 });
 describe("POST /user/signout", () => {

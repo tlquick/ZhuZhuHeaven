@@ -17,10 +17,10 @@ module.exports = function (app) {
   app.post("/user/signin", controller.signin);
   app.post("/user/signout", controller.signout);
 
-  app.get("/user/cart", (req, res) => {
+  app.get("/cart", (req, res) => {
     res.json({ message: "User cart." });
   });
-  app.post("/user/cart/add", (req, res) => {
+  app.post("/cart/add", (req, res) => {
     res.json({ message: "Cart - Add item." });
   });
 };
