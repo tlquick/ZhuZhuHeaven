@@ -11,7 +11,6 @@ const Category = () => {
     (async () => {
       try {
         const response = await axios.get(url);
-        console.log("UseEffect: " + response.data);
         setCategories(response.data);
         setData(response.data);
       } catch (error) {

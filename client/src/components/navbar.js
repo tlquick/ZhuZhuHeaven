@@ -1,30 +1,15 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import AuthService from "../services/user.service";
-import axios from "axios";
+import SearchBar from "./searchbar";
 const NavBar = () => {
   const navigate = useNavigate();
-  const [searchString, setSearchString] = useState("");
   const handleSignout = (e) => {
     e.preventDefault();
     AuthService.logout().then(() => {
       navigate("/");
       window.location.reload();
     });
-  };
-  const handleChange = (e) => {
-    e.preventDefault();
-    setSearchString(e.target.value.toLowerCase());
-  };
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    const params = new URLSearchParams();
-    params.append("s", searchString);
-
-    const url = `${process.env.REACT_APP_SERVER_URL}/search`;
-    const response = await axios.get(url, { params }); //send the searchString to the api as params
-    navigate("/search", { state: JSON.stringify(response.data) });
-    window.location.reload();
   };
 
   return (
@@ -57,23 +42,7 @@ const NavBar = () => {
         </a>
       </div>
       <img src="/images/zhuzhu.png" className="pet-logo" alt="pet logo" />
-      <div className="search-wrapper input-group mb-2">
-        <input
-          className="form-control"
-          type="search"
-          placeholder="Type the name of the zhu zhu e.g. Dezel"
-          onChange={handleChange}
-        />
-        <div className="input-group-append">
-          <button
-            className="search-button btn btn-outline-info"
-            type="button"
-            onClick={handleSearch}
-          >
-            <img src="/images/search.png" alt="search" />
-          </button>
-        </div>
-      </div>
+      <SearchBar />
     </div>
   );
 };
