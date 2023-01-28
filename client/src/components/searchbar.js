@@ -32,7 +32,6 @@ const SearchBar = () => {
     const url = `${process.env.REACT_APP_SERVER_URL}/search`;
     const response = await axios.get(url, { params }); //send the searchString to the api as params
     navigate("/search", { state: JSON.stringify(response.data) });
-    window.location.reload();
   };
   return (
     <div className="search-wrapper mb-2">
