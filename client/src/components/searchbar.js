@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Autocomplete, TextField } from "@mui/material";
 
@@ -8,7 +8,7 @@ const SearchBar = () => {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [searchString, setSearchString] = useState("");
-  useEffect(() => {
+  useLayoutEffect(() => {
     const url = `${process.env.REACT_APP_SERVER_URL}/category`;
     (async () => {
       try {
