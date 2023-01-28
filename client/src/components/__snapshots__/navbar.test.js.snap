@@ -26,6 +26,7 @@ exports[`matches navbar snapshot 1`] = `
         className="contact mx-auto fs-5"
       >
         ****Free Delivery in Australia
+           
       </p>
     </div>
     <a
@@ -77,7 +78,7 @@ exports[`matches navbar snapshot 1`] = `
     src="/images/zhuzhu.png"
   />
   <div
-    className="search-wrapper input-group mb-2"
+    className="search-wrapper mb-2"
   >
     <div
       aria-owns={null}
@@ -87,7 +88,6 @@ exports[`matches navbar snapshot 1`] = `
       onMouseDown={[Function]}
       style={
         Object {
-          "paddingLeft": "100px",
           "width": 400,
         }
       }
@@ -176,20 +176,16 @@ exports[`matches navbar snapshot 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="input-group-append"
+    <button
+      className="search-button btn btn-outline-info"
+      onClick={[Function]}
+      type="button"
     >
-      <button
-        className="search-button btn btn-outline-info"
-        onClick={[Function]}
-        type="button"
-      >
-        <img
-          alt="search"
-          src="/images/search.png"
-        />
-      </button>
-    </div>
+      <img
+        alt="search"
+        src="/images/search.png"
+      />
+    </button>
   </div>
 </div>
 `;

@@ -20,8 +20,11 @@ const NavBar = () => {
       <div className="nav">
         <div>
           <p className="contact mx-auto fs-2">Contact Us: 1800 zhu zhu</p>
-          <p className="contact mx-auto fs-5">****Free Delivery in Australia</p>
+          <p className="contact mx-auto fs-5">
+            ****Free Delivery in Australia{"   "}
+          </p>
         </div>
+
         <a
           className="link btn wiki fs-5"
           href="https://en.wikipedia.org/wiki/ZhuZhu_Pets"

@@ -2,7 +2,6 @@ import { useState, useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Autocomplete, TextField } from "@mui/material";
 
-//import ItemService from "../services/item.service";
 import axios from "axios";
 const SearchBar = () => {
   const navigate = useNavigate();
@@ -36,26 +35,23 @@ const SearchBar = () => {
     window.location.reload();
   };
   return (
-    <div className="search-wrapper input-group mb-2">
+    <div className="search-wrapper mb-2">
       <Autocomplete
         id="s"
         options={data.map((option) => option.name)}
         style={{
           width: 400,
-          paddingLeft: "100px",
         }}
         renderInput={(params) => <TextField {...params} label="" />}
         onChange={handleChange}
       />
-      <div className="input-group-append">
-        <button
-          className="search-button btn btn-outline-info"
-          type="button"
-          onClick={handleSearch}
-        >
-          <img src="/images/search.png" alt="search" />
-        </button>
-      </div>
+      <button
+        className="search-button btn btn-outline-info"
+        type="button"
+        onClick={handleSearch}
+      >
+        <img src="/images/search.png" alt="search" />
+      </button>
     </div>
   );
 };
