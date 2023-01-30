@@ -9,4 +9,5 @@ Approach: TDD for login, BDD for Cart<br>
 Frontend technology: react, react-dom, react-router-dom, cors, bootstrap, axios, mui <br>
 The website will allow users to signup, signin, browse, add to cart and purchase a limited number of items and signout <br>
 To Create: <br> Fork and download, create a MongoDB and populate an items table with the contents of docs/db.txt. <br> Then create .env with CLIENT_URL, DATABASE_URL, JWT_SECRET and COOKIE_SECRET and client/.env with REACT_APP_SERVER_URL.<br>
-*** Please note: I have run out of build minutes on render, so no CI/CD - will deploy at the end of January 2023 when new build minutes are available
+<h2> Live Deployment </h2>
+Check out this project at https://zhuzhuheaven.onrender.com/
