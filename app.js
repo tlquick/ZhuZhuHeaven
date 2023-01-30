@@ -7,7 +7,7 @@ const cookieSession = require("cookie-session");
 const app = express();
 
 var corsOptions = {
-  origin: `${process.env.CLIENT_URL}`,
+  origin: true,
   credentials: true,
 };
 
