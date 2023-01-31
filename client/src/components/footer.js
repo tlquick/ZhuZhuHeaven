@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
     <div className="footer" data-testid="footer-1">
-      <div className="nav">
-        <p className="fs-3">
-          Address: 1 ZhuZhu Street, ZhuzhuCity 1234. Z.H.U Zhuzhuland
-        </p>
+      <p className="fs-5">
+        Address: 1 ZhuZhu Street, ZhuzhuCity 1234. Z.H.U Zhuzhuland
+      </p>
+      <div className="footer-links">
         <a className="link" href="/info/privacy">
           Privacy Policy
         </a>

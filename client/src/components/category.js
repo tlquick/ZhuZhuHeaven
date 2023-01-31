@@ -20,7 +20,7 @@ const Category = () => {
   }, []); //run once
 
   const filterItems = async (series) => {
-    const result = await Categories.filter((val) => {
+    const result = Categories.filter((val) => {
       return val.series === series;
     });
     setData(result);

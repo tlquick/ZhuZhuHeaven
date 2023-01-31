@@ -23,7 +23,8 @@
   padding: 1rem;
 }
 .main-screen {
-  max-width: 90rem;
+  max-width: 95rem;
+  min-width: 18rem;
   text-align: center;
   display: block;
   height: 100px;
@@ -50,8 +51,10 @@ label {
 }
 .nav {
   float: right;
+  width: 45%;
 }
 .header {
+  width: 100%;
   position: relative;
   top: 0rem;
   height: 20hv;
@@ -63,11 +66,12 @@ label {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+
 }
 @media only screen and (min-width: 768px) {
   .search-wrapper{
     width: 40%;
-    margin-left: 45%;
+    padding-left:10%;
   }
   .pet-logo {
     position: absolute;
@@ -82,20 +86,23 @@ label {
   width:100%;
   padding: 1rem;
   background-color: #f6f6f6;
-  height: 10vh;
+  height: 20vh;
+}
+.footer-links{
+  float:right;
 }
 .card-img-top{
   width:15rem;
   height:22rem;
   object-fit:contain;
 }
-
-
 .contact{
   text-align: center;
   display: block;
-  width: 30rem;
+  width: 80%;
   color:blueviolet;
+  margin-left: auto;
+  margin-right: auto;
 }
 .wiki{
   color:#4B0082;
