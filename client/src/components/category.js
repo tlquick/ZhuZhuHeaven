@@ -19,8 +19,8 @@ const Category = () => {
     })();
   }, []); //run once
 
-  const filterItems = (series) => {
-    const result = Categories.filter((val) => {
+  const filterItems = async (series) => {
+    const result = await Categories.filter((val) => {
       return val.series === series;
     });
     setData(result);
@@ -106,6 +106,9 @@ const Category = () => {
             </button>
           </div>
           <div className="col-md-9">
+            <p hidden data-testid="category-count">
+              {JSON.stringify(data)}
+            </p>
             <ItemCards items={data} />
           </div>
         </div>

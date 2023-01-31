@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches itemcards snapshot 1`] = `
+<div
+  className="row"
+  data-testid="itemcards-1"
+>
+  <div
+    className="col-md-4 mb-4"
+  >
+    <div
+      className="card"
+      data-testid="itemcards-2"
+    >
+      <img
+        alt="item"
+        className="card-img-top"
+        src="../image/mrsquiggles.jpg"
+      />
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+          mr squiggles
+        </h5>
+        <p
+          className="card-text"
+        >
+          Mr Squiggles is brown and white with a pink nose
+        </p>
+        <p>
+          Price: $
+          220
+        </p>
+        <a
+          className="btn btn-dark"
+          href="/cart"
+        >
+          Add to Cart
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="col-md-4 mb-4"
+  >
+    <div
+      className="card"
+      data-testid="itemcards-2"
+    >
+      <img
+        alt="item"
+        className="card-img-top"
+        src="../image/pipsqueak.jpg"
+      />
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+          pipsqueak
+        </h5>
+        <p
+          className="card-text"
+        >
+          Pipsqueak is yellow and white with a pink nose
+        </p>
+        <p>
+          Price: $
+          200
+        </p>
+        <a
+          className="btn btn-dark"
+          href="/cart"
+        >
+          Add to Cart
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="col-md-4 mb-4"
+  >
+    <div
+      className="card"
+      data-testid="itemcards-2"
+    >
+      <img
+        alt="item"
+        className="card-img-top"
+        src="../image/jilly.jpg"
+      />
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+          jilly
+        </h5>
+        <p
+          className="card-text"
+        >
+          Jilly is pink and white with a pink nose
+        </p>
+        <p>
+          Price: $
+          200
+        </p>
+        <a
+          className="btn btn-dark"
+          href="/cart"
+        >
+          Add to Cart
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

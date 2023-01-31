@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches search snapshot 1`] = `
+<div
+  className="main-screen"
+  data-testid="searchResults-1"
+>
+  <div
+    className="col-md-9"
+  >
+    <mock-cards
+      data-testid="items-1"
+    />
+  </div>
+</div>
+`;

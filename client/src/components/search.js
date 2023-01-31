@@ -4,7 +4,7 @@ const Search = () => {
   const location = useLocation();
   const data = JSON.parse(location.state);
   return (
-    <div className="main-screen" data-testid="search-1">
+    <div className="main-screen" data-testid="searchResults-1">
       <div className="col-md-9">
         <ItemCards items={data} />
       </div>

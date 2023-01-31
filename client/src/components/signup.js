@@ -33,10 +33,8 @@ const passwordError = (value) => {
 
 function formErrors(username, password, email) {
   if (passwordError(password) || usernameError(username) || emailError(email)) {
-    console.log(" formErrors is true");
     return true;
   } else {
-    console.log(" formErrors is false");
     return false;
   }
 }

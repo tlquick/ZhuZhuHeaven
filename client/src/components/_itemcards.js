@@ -1,12 +1,12 @@
 const ItemCards = (list) => {
   const data = list.items;
   return (
-    <div className="row">
+    <div className="row" data-testid="itemcards-1">
       {data.map((values) => {
         const { _id, name, desc, price, image } = values;
         return (
           <div className="col-md-4 mb-4" key={_id}>
-            <div className="card">
+            <div className="card" data-testid="itemcards-2">
               <img src={image} className="card-img-top" alt="item" />
               <div className="card-body">
                 <h5 className="card-title">{name}</h5>

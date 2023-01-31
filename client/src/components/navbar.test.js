@@ -2,12 +2,15 @@ import { BrowserRouter } from "react-router-dom";
 import { render, screen, cleanup } from "@testing-library/react";
 import renderer from "react-test-renderer";
 import NavBar from "./navbar";
-const mockedUsedNavigate = jest.fn();
+const mockedUseNavigate = jest.fn();
 
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
-  useNavigate: () => mockedUsedNavigate,
+  useNavigate: () => mockedUseNavigate,
 }));
+jest.mock("./searchbar", () => () => {
+  return <mock-search data-testid="search-1" />;
+});
 afterEach(() => {
   cleanup();
 });

@@ -11,7 +11,6 @@ const missing = (value) => {
 };
 function formErrors(username, password) {
   if (missing(password) || missing(username)) {
-    console.log(" formErrors is true");
     return true;
   } else return false;
 }

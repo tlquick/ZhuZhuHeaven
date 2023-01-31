@@ -14,6 +14,7 @@ const SearchBar = () => {
         const response = await axios.get(url);
         setData(response.data);
       } catch (error) {
+        console.log("error is " + error.message);
         alert(error.message);
       }
     })();
@@ -21,7 +22,6 @@ const SearchBar = () => {
 
   const handleChange = (e, val) => {
     e.preventDefault();
-    console.log("HandleChange: " + val);
     setSearchString(val.toLowerCase());
   };
   const handleSearch = async (e) => {
@@ -34,7 +34,7 @@ const SearchBar = () => {
     navigate("/search", { state: JSON.stringify(response.data) });
   };
   return (
-    <div className="search-wrapper mb-2">
+    <div className="search-wrapper mb-2" data-testid="search-1">
       <Autocomplete
         id="s"
         options={data.map((option) => option.name)}
@@ -42,11 +42,13 @@ const SearchBar = () => {
           width: 400,
         }}
         renderInput={(params) => <TextField {...params} label="" />}
+        data-testid="search-input"
         onChange={handleChange}
       />
       <button
         className="search-button btn btn-outline-info"
         type="button"
+        data-testid="search-button"
         onClick={handleSearch}
       >
         <img src="/images/search.png" alt="search" />

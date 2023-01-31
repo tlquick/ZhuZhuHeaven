@@ -74,8 +74,15 @@ exports[`matches home snapshot 1`] = `
         <div
           className="col-md-9"
         >
+          <p
+            data-testid="category-count"
+            hidden={true}
+          >
+            []
+          </p>
           <div
             className="row"
+            data-testid="itemcards-1"
           />
         </div>
       </div>
