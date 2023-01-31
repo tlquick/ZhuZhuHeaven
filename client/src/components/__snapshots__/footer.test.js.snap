@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches footer snapshot 1`] = `
+<div
+  className="footer"
+  data-testid="footer-1"
+>
+  <p
+    className="fs-5"
+  >
+    Address: 1 ZhuZhu Street, ZhuzhuCity 1234. Z.H.U Zhuzhuland
+  </p>
+  <div
+    className="footer-links"
+  >
+    <a
+      className="link"
+      href="/info/privacy"
+    >
+      Privacy Policy
+    </a>
+    <a
+      className="link"
+      href="/info/terms"
+    >
+      Terms and Conditions
+    </a>
+    <a
+      className="link"
+      href="/info/agreement"
+    >
+      Customer Agreement
+    </a>
+    <a
+      className="link"
+      href="/info/sitemap"
+    >
+      Sitemap
+    </a>
+  </div>
+</div>
+`;

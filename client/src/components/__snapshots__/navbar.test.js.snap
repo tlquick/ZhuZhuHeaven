@@ -10,27 +10,15 @@ exports[`matches navbar snapshot 1`] = `
   >
     <img
       alt="logo"
-      src="/images/logo.png"
+      className="img-fluid"
+      src="/images/logo_sm.png"
     />
   </a>
   <div
     className="nav"
   >
-    <div>
-      <p
-        className="contact mx-auto fs-2"
-      >
-        Contact Us: 1800 zhu zhu
-      </p>
-      <p
-        className="contact mx-auto fs-5"
-      >
-        ****Free Delivery in Australia
-           
-      </p>
-    </div>
     <a
-      className="link btn wiki fs-5"
+      className="link btn wiki fs-4"
       href="https://en.wikipedia.org/wiki/ZhuZhu_Pets"
     >
       Learn More
@@ -41,6 +29,7 @@ exports[`matches navbar snapshot 1`] = `
     >
       <img
         alt="signin"
+        className="img-fluid"
         src="/images/signin.png"
       />
     </a>
@@ -50,6 +39,7 @@ exports[`matches navbar snapshot 1`] = `
     >
       <img
         alt="signup"
+        className="img-fluid"
         src="/images/signup.png"
       />
     </a>
@@ -59,6 +49,7 @@ exports[`matches navbar snapshot 1`] = `
     >
       <img
         alt="signout"
+        className="img-fluid"
         src="/images/signout.png"
       />
     </button>
@@ -68,13 +59,28 @@ exports[`matches navbar snapshot 1`] = `
     >
       <img
         alt="cart"
+        className="img-fluid"
         src="/images/cart.png"
       />
     </a>
   </div>
+  <div
+    className="contact"
+  >
+    <p
+      className="fs-3"
+    >
+      Contact Us: 1800 zhu zhu
+    </p>
+    <p
+      className="fs-5"
+    >
+      ****Free Delivery in Australia
+    </p>
+  </div>
   <img
     alt="pet logo"
-    className="pet-logo"
+    className="pet-logo img-fluid"
     src="/images/zhuzhu.png"
   />
   <mock-search
