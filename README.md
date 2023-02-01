@@ -1,5 +1,5 @@
 # ZhuZhuHeaven
-Mock ecommerce website, circa 2023 <br>
+Mock ecommerce website, circa 2023 **under development - expected finish mid February 2023<br>
 Create a simple ecommerce website with JWT to sell ZhuZhu pets (a particularly annoying toy from the early 2000s) <br>
 ![Zhuzhu](/docs/logo.png?raw=true "Home Page") <br>
 Project uses: <br>
